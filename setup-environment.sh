@@ -4,7 +4,7 @@
 #         VIM         #
 #######################
 # enable clipboard
-sudo apt-get install -y vim-gtk3
+sudo apt-get install vim-gtk3
 
 # vim-plug
 sudo apt-get install curl
