@@ -10,12 +10,7 @@ sudo apt-get install git
 pip3 install getgist
 
 # VIM
-# git clone https://github.com/vim/vim.git
-# cd vim/src
-# make
-# sudo make install
-# cd ../../
-# rm -rf vim
+sudo apt-get install vim
 
 # ranger
 sudo apt-get install ranger
