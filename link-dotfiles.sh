@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../dotfiles
-./install -c server.conf.yaml
+./install -c <server/client>.conf.yaml
