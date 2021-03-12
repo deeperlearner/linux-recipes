@@ -21,7 +21,7 @@ pip3 install jedi pylint
 
 # VIM install plugins
 vim +'PlugInstall --sync' +qa
-vim +'CocInstall --sync coc-python' +qa
+vim +'CocInstall --sync coc-jedi' +qa
 
 ########################
 #         tmux         #
