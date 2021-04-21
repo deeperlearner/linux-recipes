@@ -1,6 +1,11 @@
 #!/bin/bash
 
+# update
 sudo apt-get update
+
+# GNOME color
+sudo apt install gnome-tweaks
+
 # Python3
 sudo apt-get install python3-pip
 pip3 install trash-cli virtualenvwrapper
