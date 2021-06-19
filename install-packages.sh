@@ -18,8 +18,5 @@ pip3 install getgist
 sudo apt-get install ranger
 # pip3 install ueberzug
 
-# tmux
-sudo apt-get install tmux
-
 # cloc
 sudo apt-get install cloc

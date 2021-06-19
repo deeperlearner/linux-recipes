@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#######################
-#         VIM         #
-#######################
+sudo apt-get install vim
+
 # enable clipboard
 sudo apt-get install vim-gtk3
 
@@ -22,9 +21,3 @@ pip3 install jedi pylint
 # VIM install plugins
 vim +'PlugInstall --sync' +qa
 vim +'CocInstall --sync coc-jedi' +qa
-
-########################
-#         tmux         #
-########################
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
