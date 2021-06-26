@@ -1,3 +1,0 @@
-[submodule "dockerfile-to-shell-script"]
-	path = dockerfile-to-shell-script
-	url = https://github.com/deeperlearner/dockerfile-to-shell-script
