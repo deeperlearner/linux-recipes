@@ -47,7 +47,7 @@ Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
 ## install dotfiles
 
 ```
-mkdir -p Github/myrepo/public && cd "$_"
+mkdir -p Github/myrepo && cd "$_"
 # global
 git clone https://github.com/deeperlearner/dotfiles
 cd dotfiles
