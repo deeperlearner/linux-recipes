@@ -1,8 +1,8 @@
 # linux bootstrap
 My main linux version is Ubutnu
 
-## packages
-### install packages
+## install packages
+
 ```
 sudo apt-get update
 sudo apt-get install \
@@ -11,56 +11,41 @@ sudo apt-get install \
     htop \
     python3-pip
 ```
-#### optional packages
+
+### optional packages
+
 ```
 sudo apt-get install \
     gnome-tweaks cloc vim-gtk3
 ```
-### setup ssh
-#### [add client key to ssh server](add_ssh_key.md)
-#### add key to Github
-```
-ssh-keygen
-```
-Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
 
-### setup vim
-#### [coc.nvim](https://github.com/neoclide/coc.nvim)
-[`./coc_setup.sh`](coc_setup.sh)
-### setup tmux
-```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
-```
-### install python3 packages
+## install python3 packages
+
 ```
 pip3 install trash-cli
 ```
-#### optional packages
+
+### optional packages
+
 ```
 pip3 install virtualenvwrapper getgist \
     jupyter jupyter_contrib_nbextensions jupyterthemes \
     ueberzug
 ```
-### setup jupyter
-#### [jupyter-vim-binding](https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation)
-##### Activate the extensions configurator
+
+## setup ssh
+
+### [add client key to ssh server](add_ssh_key.md)
+
+### add key to Github
+
 ```
-jupyter nbextensions_configurator enable --user
+ssh-keygen
 ```
-##### Add vim_binding to IPython-notebook-extensions
-```
-mkdir -p $(jupyter --data-dir)/nbextensions
-cd $(jupyter --data-dir)/nbextensions
-git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-chmod -R go-w vim_binding
-```
-#### [jupyter-themes](https://github.com/dunovank/jupyter-themes)
-```
-jt -t gruvboxd -vim
-```
+Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
 
 ## install dotfiles
+
 ```
 mkdir -p Github/myrepo/public && cd "$_"
 # global
@@ -72,13 +57,56 @@ cd ..
 git clone https://github.com/deeperlearner/dotfiles-local
 cd dotfiles-local
 ./install
-# private
-git clone git@github.com:deeperlearner/dotfiles-private
-cd dotfiles-private
-./install
+```
+
+## setup vim
+
+### setup [coc.nvim](https://github.com/neoclide/coc.nvim)
+
+```
+# node.js
+curl -sL install-node.now.sh/lts | sudo bash
+sudo apt-get install npm
+# pylint
+pip3 install jedi pylint
+# jedi
+vim +'CocInstall -sync coc-jedi' +qall
+```
+
+## setup tmux
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
+```
+
+## setup jupyter
+
+### [jupyter-vim-binding](https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation)
+
+#### Activate the extensions configurator
+
+```
+jupyter nbextensions_configurator enable --user
+```
+
+#### Add vim_binding to IPython-notebook-extensions
+
+```
+mkdir -p $(jupyter --data-dir)/nbextensions
+cd $(jupyter --data-dir)/nbextensions
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+chmod -R go-w vim_binding
+```
+
+### [jupyter-themes](https://github.com/dunovank/jupyter-themes)
+
+```
+jt -t gruvboxd -vim
 ```
 
 ## [gpu setup](gpu_setup.md)
 
 ## Acknowledgements
+
 This project is inspired by Anish's [repository](https://github.com/anishathalye/linux-bootstrap)
