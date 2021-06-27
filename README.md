@@ -25,23 +25,8 @@ ssh-keygen
 Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
 
 ### setup vim
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-#### CoC
-```
-# node.js
-curl -sL install-node.now.sh/lts | sudo bash
-# language server
-## coc-python
-sudo apt-get install npm
-## pylint
-pip3 install jedi pylint
-
-# install plugins in .vimrc
-vim +'PlugInstall --sync' +qa
-vim +'CocInstall --sync coc-jedi' +qa
-```
+#### [coc.nvim](https://github.com/neoclide/coc.nvim)
+[`./coc_setup.sh`](coc_setup.sh)
 ### setup tmux
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
