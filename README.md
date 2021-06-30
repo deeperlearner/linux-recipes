@@ -1,15 +1,16 @@
 # linux bootstrap
-My main linux version is Ubutnu
+Install packages and setup my coding environment on Ubuntu.
 
 ## install packages
 
 ```
 sudo apt-get update
 sudo apt-get install \
-    curl git ssh rsync \
+    curl git rsync \
+    python3-pip \
+    ssh xrdp \
     vim ranger tmux \
-    htop \
-    python3-pip
+    htop
 ```
 
 ### optional packages
@@ -33,16 +34,44 @@ pip3 install virtualenvwrapper getgist \
     ueberzug
 ```
 
-## setup ssh
+## [setup jupyter](jupyter_setup.md)
 
-### [add client key to ssh server](add_ssh_key.md)
+## setup daemons
 
-### add key to Github
+### ssh
+
+#### setup
+
+```
+sudo systemctl status ssh
+sudo systemctl start ssh
+```
+
+#### [add client key to ssh server](add_ssh_key.md)
+
+#### add key to Github
 
 ```
 ssh-keygen
 ```
 Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
+
+### docker
+
+#### [setup](https://docs.docker.com/engine/install/ubuntu/)
+
+#### executing docker commands as a non-root user
+
+```
+sudo usermod -aG docker $USER
+```
+
+### xrdp
+
+```
+sudo systemctl status xrdp
+sudo adduser xrdp ssl-cert
+```
 
 ## install dotfiles
 
@@ -80,32 +109,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 ```
 
-## setup jupyter
-
-### [jupyter-vim-binding](https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation)
-
-#### Activate the extensions configurator
-
+## setup python3 virtual environment
 ```
-jupyter nbextensions_configurator enable --user
+mkvirtualenv <env_name>
 ```
+[some ref packages](requirments.txt)
 
-#### Add vim_binding to IPython-notebook-extensions
-
-```
-mkdir -p $(jupyter --data-dir)/nbextensions
-cd $(jupyter --data-dir)/nbextensions
-git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-chmod -R go-w vim_binding
-```
-
-### [jupyter-themes](https://github.com/dunovank/jupyter-themes)
-
-```
-jt -t gruvboxd -vim
-```
-
-## [gpu setup](gpu_setup.md)
+## [setup gpu](gpu_setup.md)
 
 ## Acknowledgements
 
