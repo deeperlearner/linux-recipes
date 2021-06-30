@@ -6,11 +6,10 @@ Install packages and setup my coding environment on Ubuntu.
 ```
 sudo apt-get update
 sudo apt-get install \
-    curl git rsync \
+    curl git rsync htop \
     python3-pip \
     ssh xrdp \
-    vim ranger tmux \
-    htop
+    vim ranger tmux
 ```
 
 ### optional packages
