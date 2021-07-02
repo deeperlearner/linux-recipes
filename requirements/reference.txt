@@ -1,4 +1,4 @@
-# Global
+# Frequently used
 getgist
 jedi
 jupyter

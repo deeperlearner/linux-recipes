@@ -1,6 +1,5 @@
-Method to add ssh key on server
+Copy the public key of the client to `~/.ssh/authorized_keys` of the host
 ===
-This following steps show how to add your public keys of client to your host.
 
 1. At host
     - First, edit `/etc/ssh/sshd_config` to turn on password login.

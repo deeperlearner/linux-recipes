@@ -1,90 +1,62 @@
 # linux bootstrap
-Install packages and setup my coding environment on Ubuntu.
 
-## install packages
+Install packages and setup environment on Ubuntu.
+It is specifically aimed for machine learning development.
+Maybe there will be branches in the futrue.
 
-```
-sudo apt-get update
-sudo apt-get install \
-    curl git rsync htop \
-    python3-pip \
-    ssh xrdp \
-    vim ranger tmux
-```
-
-### optional packages
+## setup docker
 
 ```
-sudo apt-get install \
-    gnome-tweaks cloc vim-gtk3
+./scripts/docker_setup.sh
 ```
 
-## install python3 packages
+### executing docker commands as a non-root user
 
 ```
-pip3 install trash-cli
+sudo usermod -aG docker $USER
 ```
 
-### optional packages
+Some examples of `Dockerfile` are in `dockerfiles/`.
+
+## setup packages
 
 ```
-pip3 install virtualenvwrapper getgist \
-    jupyter jupyter_contrib_nbextensions jupyterthemes \
-    ueberzug
+./scripts/packages_setup.sh
 ```
 
-## [setup jupyter](jupyter_setup.md)
-
-## setup daemons
-
-### ssh
-
-#### setup
+## setup ssh
 
 ```
 sudo systemctl status ssh
 sudo systemctl start ssh
 ```
 
-#### [add client key to ssh server](add_ssh_key.md)
+### [copy client key to server](notes/copy_key_to_server.md)
 
-#### add key to Github
+### add key to Github
 
 ```
 ssh-keygen
 ```
 Add `~/.ssh/id_rsa.pub` to [Github settings](https://github.com/settings/keys)
 
-### docker
-
-#### [setup](https://docs.docker.com/engine/install/ubuntu/)
-
-#### executing docker commands as a non-root user
-
-```
-sudo usermod -aG docker $USER
-```
-
-### xrdp
+## setup xrdp
 
 ```
 sudo systemctl status xrdp
 sudo adduser xrdp ssl-cert
 ```
 
-## install dotfiles
+## setup jupyter
 
 ```
-mkdir -p Github/myrepo && cd "$_"
-# global
-git clone https://github.com/deeperlearner/dotfiles
-cd dotfiles
-./install
-cd ..
-# local
-git clone https://github.com/deeperlearner/dotfiles-local
-cd dotfiles-local
-./install
+./scripts/jupyter_setup.sh
+```
+
+## setup dotfiles
+
+```
+./scripts/dotfiles_setup.sh
 ```
 
 ## setup vim
@@ -92,13 +64,7 @@ cd dotfiles-local
 ### setup [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 ```
-# node.js
-curl -sL install-node.now.sh/lts | sudo bash
-sudo apt-get install npm
-# pylint
-pip3 install jedi pylint
-# jedi
-vim +'CocInstall -sync coc-jedi' +qall
+./scripts/coc-nvim_setup.sh
 ```
 
 ## setup tmux
@@ -112,9 +78,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 mkvirtualenv <env_name>
 ```
-[some ref packages](requirments.txt)
+[reference packages](scripts/requirements/reference.txt)
 
-## [setup gpu](gpu_setup.md)
+## [setup gpu](notes/gpu_setup.md)
 
 ## Acknowledgements
 
