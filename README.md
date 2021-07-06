@@ -6,9 +6,7 @@ Maybe there will be branches in the futrue.
 
 ## setup docker
 
-```
-./scripts/docker_setup.sh
-```
+Check `dockerfiles/README.md`.
 
 ### executing docker commands as a non-root user
 
@@ -75,6 +73,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 ## setup python3 virtual environment
+
 ```
 mkvirtualenv <env_name>
 ```
