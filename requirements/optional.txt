@@ -1,4 +1,0 @@
-getgist
-
-# ranger
-ueberzug

@@ -13,5 +13,4 @@ sudo apt-get install \
     gnome-tweaks cloc vim-gtk3
 
 # install python packages
-pip3 install -r ../requirements/necessary.txt
-pip3 install -r ../requirements/optional.txt
+pip3 install -r requirements.txt

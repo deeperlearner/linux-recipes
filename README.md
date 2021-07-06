@@ -16,7 +16,7 @@ Maybe there will be branches in the futrue.
 sudo usermod -aG docker $USER
 ```
 
-Some examples of `Dockerfile` are in `dockerfiles/`.
+Some examples of `Dockerfile` are in the submodule `dockerfiles/`.
 
 ## setup packages
 
@@ -78,10 +78,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 mkvirtualenv <env_name>
 ```
-[reference packages](scripts/requirements/reference.txt)
+[reference packages](notes/requirements.md)
 
 ## [setup gpu](notes/gpu_setup.md)
 
 ## Acknowledgements
 
-This project is inspired by Anish's repo [linux-bootstrap](https://github.com/anishathalye/linux-bootstrap)
+This project is inspired by Anish's repository [linux-bootstrap](https://github.com/anishathalye/linux-bootstrap)

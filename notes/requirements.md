@@ -1,4 +1,7 @@
+Reference requirements for python packages
+===
 # Frequently used
+
 getgist
 jedi
 jupyter
@@ -9,7 +12,9 @@ sympy
 scipy
 virtualenv
 virtualenvwrapper
+
 ## Base
+
 matplotlib
 numpy
 pandas
@@ -17,24 +22,29 @@ scikit-image
 scikit-learn
 tqdm    # loading bar tool
 
-
 # Deep Learning
+
 ## Keras
+
 keras
 
 ## TensorFlow
+
 tensorflow
 tensorflow-gpu
 
 ## PyTorch
+
 torch
 torchvision
 
 ## cv2
+
 opencv-python
 
 ## Plot tools
-graphviz    # sudo apt install graphviz
+
+graphviz  # sudo apt install graphviz
 pydot
 seaborn
 tensorboard
@@ -42,34 +52,42 @@ torchviz
 wandb
 
 # Fintech
+
 mpl-finance
 TA-Lib
 
 # Crawling
+
 beautifulsoup4
 selenium
 
 # Numerical methods
+
 iminuit
 imutils
 PeakUtils
 
 # Optimization
+
 cvxopt
 cvxpy
 
 # Quantum Computing
+
 qiskit
 
 # SQL
+
 mysql.connector
 pyodbc
 pymysql
 sqlalchemy
 
 # Time Series Analysis
+
 pmdarima
 statsmodels
 
 # VPython
+
 vpython
