@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -x
 
 # node.js
 curl -sL install-node.now.sh/lts | sudo bash

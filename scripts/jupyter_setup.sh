@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -x
 
 # install packages
 pip3 install jupyter jupyter_contrib_nbextensions jupyterthemes

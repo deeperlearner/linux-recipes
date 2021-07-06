@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -x
 
 mkdir -p Github/myrepo && cd "$_"
 

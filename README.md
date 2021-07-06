@@ -1,4 +1,4 @@
-# linux bootstrap
+# linux recipes
 
 Install packages and setup environment on Ubuntu.
 It is specifically aimed for machine learning development.
@@ -84,4 +84,4 @@ mkvirtualenv <env_name>
 
 ## Acknowledgements
 
-This project is inspired by Anish's [repository](https://github.com/anishathalye/linux-bootstrap)
+This project is inspired by Anish's repo [linux-bootstrap](https://github.com/anishathalye/linux-bootstrap)

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -x
 # reference: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 # Install using the repository
