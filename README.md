@@ -77,7 +77,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 mkvirtualenv <env_name>
 ```
-[reference packages](notes/requirements.md)
+[reference packages](notes/requirements.txt)
 
 ## [setup gpu](notes/gpu_setup.md)
 
