@@ -12,3 +12,4 @@ cd ..
 git clone https://github.com/deeperlearner/dotfiles-local
 cd dotfiles-local
 ./install
+cd ..
