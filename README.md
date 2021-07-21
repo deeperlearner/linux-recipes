@@ -75,6 +75,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ## setup python3 virtual environment
 
 ```
+source ~/.bashrc
 mkvirtualenv <env_name>
 ```
 [reference packages](notes/requirements.txt)

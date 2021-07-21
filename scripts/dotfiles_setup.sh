@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-mkdir -p Github/myrepo && cd "$_"
+mkdir -p $HOME/Github/myrepo && cd "$_"
 
 # global
 git clone https://github.com/deeperlearner/dotfiles
