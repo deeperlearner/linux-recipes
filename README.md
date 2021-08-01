@@ -59,6 +59,17 @@ sudo adduser xrdp ssl-cert
 
 ## setup vim
 
+### install vim
+
+```
+git clone https://github.com/vim/vim --depth 1 ~/Downloads/vim
+cd ~/Downloads/vim/src
+make distclean
+make
+sudo make install
+cd -
+```
+
 ### setup [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 ```

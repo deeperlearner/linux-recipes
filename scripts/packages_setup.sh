@@ -6,7 +6,7 @@ sudo apt-get install \
     curl git rsync htop \
     python3-pip \
     ssh xrdp \
-    vim ranger tmux
+    ranger tmux
 
 # install lf (ref: https://github.com/gokcehan/lf)
 curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin

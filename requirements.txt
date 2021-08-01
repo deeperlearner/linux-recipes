@@ -1,1 +1,11 @@
-dockerfiles/ubuntu/requirements.txt
+trash-cli
+virtualenvwrapper
+getgist
+
+# for python coding
+
+jedi
+pylint
+black
+
+# ueberzug
