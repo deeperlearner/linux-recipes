@@ -116,7 +116,7 @@ cd -
 ### local
 
 ```
-export dotfiles_local_path=~/Github/myrepo/dotfiles
+export dotfiles_local_path=~/Github/myrepo/dotfiles-local
 git clone https://github.com/deeperlearner/dotfiles-local $dotfiles_local_path
 cd $dotfiles_local_path
 ./install
