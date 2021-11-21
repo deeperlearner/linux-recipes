@@ -30,6 +30,7 @@ sudo apt-get install \
 ### install lf (ref: https://github.com/gokcehan/lf)
 
 ```
+mkdir -p ~/.local/bin
 curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
 ```
 
@@ -119,6 +120,7 @@ cd -
 export dotfiles_local_path=~/Github/myrepo/dotfiles-local
 git clone https://github.com/deeperlearner/dotfiles-local $dotfiles_local_path
 cd $dotfiles_local_path
+git checkout -t origin/Windows_WSL
 ./install
 cd -
 ```
