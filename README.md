@@ -108,7 +108,7 @@ jt -t gruvboxd -vim
 
 ```
 export dotfiles_path=~/Github/myrepo/dotfiles
-git clone https://github.com/deeperlearner/dotfiles $dotfiles_path
+git clone git@github.com:deeperlearner/dotfiles $dotfiles_path
 cd $dotfiles_path
 ./install
 cd -
@@ -118,7 +118,7 @@ cd -
 
 ```
 export dotfiles_local_path=~/Github/myrepo/dotfiles-local
-git clone https://github.com/deeperlearner/dotfiles-local $dotfiles_local_path
+git clone git@github.com:deeperlearner/dotfiles-local $dotfiles_local_path
 cd $dotfiles_local_path
 git checkout -t origin/Windows_WSL
 ./install
