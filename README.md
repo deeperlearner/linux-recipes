@@ -142,7 +142,7 @@ cd -
 
 ```
 curl -sL install-node.now.sh/lts | sudo bash
-sudo apt-get install npm
+sudo apt-get install npm python3.8 python3.8-venv
 vim +'CocInstall -sync coc-jedi' +qall
 ```
 
@@ -150,6 +150,7 @@ vim +'CocInstall -sync coc-jedi' +qall
 
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source ~/.tmux.conf
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 ```
 
